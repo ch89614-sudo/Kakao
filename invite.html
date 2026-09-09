@@ -52,6 +52,10 @@
             font-size: 16px;
             font-weight: 600;
             cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .btn-kakao:active {
+            background-color: #e5ce00;
         }
     </style>
 </head>
@@ -72,12 +76,12 @@
 </div>
 
 <script>
-    // 카카오 JavaScript 키 초기화
-    Kakao.init('894addf7c40ec6f1c81da3c0bacb9864');
+    // 콘솔에서 확인된 실제 JavaScript 키 적용
+    Kakao.init('6bed56712c73f0c38af0e4977b3ae64b');
 
     function shareKakao() {
         Kakao.Share.sendCustom({
-            templateId: 137002, // 스크린샷에서 확인된 새 템플릿 ID
+            templateId: 137002, // 템플릿 번호
         });
     }
 </script>
